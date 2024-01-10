@@ -10,7 +10,19 @@ $ pip install pycounts_dsci524_shumlh
 
 ## Usage
 
-- TODO
+`pycounts_dsci524_shumlh` can be used to count words in a text file and plot results
+as follows:
+
+```python
+from pycounts_dsci524_shumlh.pycounts_dsci524_shumlh import count_words
+from pycounts_dsci524_shumlh.plotting import plot_words
+import matplotlib.pyplot as plt
+
+file_path = "test.txt"  # path to your file
+counts = count_words(file_path)
+fig = plot_words(counts, n=10)
+plt.show()
+```
 
 ## Contributing
 
